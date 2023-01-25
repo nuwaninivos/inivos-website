@@ -1,0 +1,721 @@
+$orange: #F2652E;
+$darkblue :#264177;
+$textcolor: #595959;
+$gradient : linear-gradient(270deg, #396BB9 -28.58%, $darkblue 100.77%);
+
+
+
+
+@media (min-width: 1800px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1500px;
+    }
+
+    .why-inivos {
+        .slider-column {
+            position: relative;
+        }
+    }
+}
+
+// Media quary
+@media (max-width: 991px) {
+    .section-padding {
+        margin-top: 50px;
+    }
+
+
+
+    // header 
+    .header {
+        nav.navbar {
+            padding: 15px 0px;
+            background-color: #fff;
+            box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+        }
+    }
+
+    .header a.navbar-brand img {
+        width: 90px;
+    }
+
+    .header ul.navbar-nav.ml-auto {
+        padding: 25px;
+    }
+
+    .header ul li.nav-item {
+        text-align: right;
+    }
+
+    .header ul.navbar-nav a.nav-link {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .header ul.navbar-nav a.nav-link:hover {
+        color: red;
+    }
+
+    .header .navbar-toggler {
+        border: none;
+        background: transparent !important;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .header .navbar-toggler .icon-bar {
+        width: 22px;
+        height: 2px;
+        background-color: $darkblue;
+        display: block;
+        transition: all 0.2s;
+        margin-top: 4px;
+    }
+
+    .header .navbar-toggler .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+
+    .header .navbar-toggler .middle-bar {
+        opacity: 0;
+    }
+
+    .header .navbar-toggler .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+
+    .header .navbar-toggler.collapsed .top-bar {
+        transform: rotate(0);
+    }
+
+    .header .navbar-toggler.collapsed .middle-bar {
+        opacity: 1;
+    }
+
+    .header .navbar-toggler.collapsed .bottom-bar {
+        transform: rotate(0);
+    }
+
+    .header .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        padding-left: 15px;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-bottom: 15px;
+        width: 100%;
+        transition: all 0.3s ease;
+        /* display: block; */
+        z-index: 2;
+        height: 100vh;
+        padding-bottom: 1000px;
+    }
+
+    .header .navbar-collapse.collapsing {
+        height: auto !important;
+        margin-right: 50%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+
+    .header .navbar-collapse.show {
+        left: 0%;
+        width: 100%;
+        transition: all 0.3s ease;
+        background: #fff;
+    }
+
+
+
+
+    .hero-banner {
+        padding: 150px 0px 30px 0px;
+
+        .hero-caption {
+            h1 {
+                font-size: 45px;
+                line-height: 50px;
+            }
+        }
+    }
+
+
+
+
+    .stats {
+        .number {
+            h2 {
+                font-size: 31px;
+                line-height: 25px;
+            }
+        }
+    }
+
+
+    .why-inivos {
+        padding: 70px 0px 60px 0px;
+    }
+
+
+    .card-outer {
+        margin-bottom: 25px;
+    }
+
+
+    .strategic-alliances {
+        .card-item {
+            padding: 20px;
+        }
+    }
+
+
+    .footer {
+        .contact-detail-wrapper {
+            padding: 35px;
+        }
+
+        .form-wraper {
+            padding: 45px;
+        }
+    }
+
+
+
+
+
+    .hero-banner.inner-banner {
+        padding: 150px 0px 60px 0px;
+        &.careers-page{
+            padding: 120px 0px 60px 0px;
+            .hero-caption {
+                padding-top: 60px;
+            }
+        }
+    }
+
+
+
+    .our-team {
+        .team-image {
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 25px;
+
+            .profile {
+                background: linear-gradient(270deg, #396BB9 -28.58%, #264177 100.77%);
+                color: #fff;
+                padding: 25px;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+
+
+
+    .hero-banner.careers-page {
+        .hero-caption {
+            padding-top: 0;
+
+            h1 {
+                line-height: 52px;
+            }
+        }
+    }
+
+
+
+
+    .join-reason {
+        padding: 0;
+        padding-bottom: 50px;
+
+        .our-features {
+            position: relative;
+        }
+
+        .feature-mobile{
+            column-count: 2;
+            .feature-item {
+                background-image: url(/images/favicon.png);
+                padding-left: 25px;
+                background-size: 20px;
+                background-repeat: no-repeat;
+                background-position: 4% 50%;
+                padding: 13px 7px 13px 42px;
+                margin-left: 1px;
+                border: 1px solid #e8e8e8;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+
+
+
+    // gallery slider 
+    .gallery-slider {
+        .owl-nav {
+
+            button.owl-prev {
+                left: 0%;
+                opacity: 1;
+            }
+
+            button.owl-next {
+                right: 0%;
+                opacity: 1;
+            }
+        }
+    }
+
+
+
+
+
+    .colleagues-testimonail-section {
+        .testimonail-container {
+            background-image: url(/images/nirushi.webp);
+            background-repeat: no-repeat;
+            background-position: 0% 100%;
+            background-size: 41%;
+            padding-bottom: 50px;
+
+            .testimonail-item {
+                .content {
+                    min-height: auto;
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .p-25 {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .section-padding {
+        margin-top: 50px;
+    }
+
+    .section-title {
+        h3 {
+            margin-bottom: 5px;
+            line-height: 26px;
+            font-size: 20px;
+        }
+    }
+
+    .header {
+        nav.navbar {
+            padding: 5px 0px 5px 10px;
+        }
+
+        a.navbar-brand img {
+            width: 65px;
+        }
+
+        .navbar-collapse {
+            padding: 25px 38px 500px 15px;
+        }
+
+        ul.navbar-nav {
+            a.nav-link {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &.scrolled-nav {
+            nav.navbar {
+                padding: 5px 0px 5px 10px;
+            }
+        }
+    }
+
+    .hero-banner {
+        padding: 100px 0px 30px 0px;
+
+        .hero-caption {
+            h1 {
+                font-size: 34px;
+                line-height: 42px;
+
+                span {
+                    font-size: 34px;
+                    line-height: 42px;
+                }
+            }
+
+            .links-div {
+                h4 {
+                    line-height: 17px;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+    .hero-banner.inner-banner {
+        padding: 120px 0px 40px 0px;
+
+        .hero-caption {
+            h1 {
+                line-height: 35px;
+
+                span {
+                    color: #264177;
+                    font-size: 26px;
+                    line-height: 19px;
+                    font-weight: 700;
+                }
+            }
+
+            .links-div {
+                margin-bottom: 40px;
+
+                h4 {
+                    line-height: 24px;
+                    font-size: 20px;
+                }
+
+                h5 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #264177;
+                }
+            }
+
+            .text.w-75 {
+                width: 100% !important;
+                padding-top: 35px;
+            }
+        }
+
+    }
+
+
+    .hero-banner.inner-banner.careers-page {
+        padding: 100px 0px 60px 0px;
+        .hero-caption {
+            padding-top:  0px;
+            padding-bottom: 25px;
+        }
+    }
+
+    .why-inivos {
+        padding: 40px 0px 30px 0px;
+
+        .slider-column {
+            position: relative;
+            right: 0;
+        }
+    }
+
+
+    .our-team {
+        padding-top: 40px;
+
+        .team-image {
+            .profile {
+                padding: 15px;
+
+                h6 {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+
+                hr {
+                    margin: 0.4rem 0;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .stats {
+        padding: 35px 15px 25px 15px;
+
+        .stat-outer:not(:last-child) {
+            border-right: none;
+        }
+
+        img.img-fluid {
+            display: none;
+        }
+
+        .number {
+            h2 {
+                font-size: 24px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+
+            h5 {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+
+
+
+
+    .footer {
+        margin-top: 25px;
+
+        .contact-detail-wrapper {
+            padding: 35px 25px;
+
+            .contact-detail {
+                h6 {
+                    font-size: 17px;
+                }
+
+                p b {
+                    font-size: 15px !important;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .form-wraper {
+            padding: 25px;
+        }
+    }
+
+
+
+
+
+    .image-card {
+        .card-text {
+            padding: 15px;
+
+            h6 {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+
+
+
+    .consulting-support {
+        padding: 50px 0px;
+    }
+
+
+
+    .image-article {
+        .content {
+            ul {
+                li {
+                    font-size: 15px;
+                    line-height: 18px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+
+
+    .card-item {
+        ul {
+            li {
+                font-size: 15px;
+                line-height: 18px;
+                font-weight: 300;
+            }
+        }
+
+        p {
+            line-height: 21px;
+        }
+    }
+
+
+
+
+    .background-image {
+        padding: 50px 0px 33px 0px;
+    }
+
+
+
+    .join-reason {
+        margin-top: 20px;
+
+        .feature-item {
+            border: 1px solid #e8e8e8;
+            padding:  15px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .feature-mobile {
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+    }
+
+
+
+
+    .colleagues-testimonail-section {
+        .testimonail-container {
+            .testimonail-item {
+                .content {
+                    min-height: auto;
+                    padding: 80px 20px 20px 20px;
+                }
+            }
+        }
+    }
+
+
+
+    .our-values {
+        .card-wrapper {
+            .card-body {
+                padding: 20px;
+
+                h5 {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+
+
+
+    .colleagues-testimonail-section {
+        padding-top: 50px;
+
+        .colleagues-testimonail {
+            .testimonail-item {
+                .content {
+                    p {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    .interview-process {
+        &.background-image {
+            background-image: url(/images/inerview-process-background.jpg);
+
+            &::after {
+                position: absolute;
+                opacity: .9;
+            }
+        }
+
+        .interview-process-item {
+            .no-border {
+                width: 35px;
+                height: 35px;
+
+                h3 {
+                    font-size: 18px;
+                }
+            }
+
+            h5 {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+    // vacancy-list
+    .vacancy-list {
+        .vacancy-item.card-item {
+            padding: 18px;
+            box-shadow:none;
+            border: 1px solid #e3e3e3;
+            h6 { 
+                font-size: 15px; 
+                line-height: 21px;
+            }
+        }
+    }
+
+}
